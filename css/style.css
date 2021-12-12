@@ -1,0 +1,38 @@
+
+body{
+    margin: 0; /*Resetea el margin y el padding que tiene el navegador por defecto*/
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #273b47;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer; /*Todas las etiquetas ancla cuando pase el cursor aparecerá una manito */
+}
+
+header{
+    width: 100%; /*Toma todo el ancho de la pantalla. Lo hace un poco flexible. Si varia el porcentaje tambien el width va a variar*/
+    height: 60px; /*Que tan grande será la etiqueta header*/
+}
+
+header nav{ /*Lo hace más especifico. Evita que tengamos a futuro problemas con los estilos que estamos colocando*/
+    display: flex; /*posicionamos su contenido*/
+    justify-content: flex-end; /*justifica el contenido en el lado derecho*/
+    height: inherit; /*Herede el alto del padre*/
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto; /*No puede ser mas alta que su padre. Toma de forma automatica la altura del padre*/
+    display: flex;
+    list-style: none;
+    justify-content: center; /*justifica el contenido al centro del contenedor*/
+    align-items: center; /*alinea los elementos para que no se queden en la parte de arriba*/
+}
+
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: #fff;
+}

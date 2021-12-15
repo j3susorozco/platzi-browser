@@ -3,7 +3,7 @@ body{
     margin: 0; /*Resetea el margin y el padding que tiene el navegador por defecto*/
     padding: 0;
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: #273b47;
 }
 
@@ -35,4 +35,79 @@ header nav .nav-right-section{
 nav .nav-right-section a{
     margin-right: 10px;
     color: #fff;
+}
+
+nav .nav-right-section .menu-icon img{
+    border-radius: unset;
+    background-repeat: no-repeat; /*Evita que no se repita la imagen. Cuando la imagen es muy pequeña se repite para llenar el contenedor */
+    background-position: center; /*centra la imagen 100%*/
+    background-size: contain; /*logre estar del tamañp del contenedor*/
+    width: 22px;
+    height: 22px;
+    color:#98ca3f;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%; /*coloca los bordes a la imagen para que forme un circulo*/
+    margin-left: 10px;
+
+}
+
+main{
+    margin-top: 150px;  /*Le damos altura porque esta muy pegado al header*/
+    text-align: center; /*todo dentro del main se centre*/
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto; /*Definir previamente el width. Divide el espacio restante en el contenedor entre dos y centro el contenido*/
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 300px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px; /*Empuja la seccion de botones hacia abajo*/
+}
+main .main-input-container{ /*contenedor que se aplicará un borde verde*/
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    display: flex; /*coloca los elementos de forma lineal*/
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none; /*Quita el borde generado cuando damos clic a un input*/
+    background-color: #273b47;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #98ca3f; /*genera una sombra al elemento*/
+    border-color: #7ab70a;
+}
+
+main .main-input .search-icon img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Platzi Browser</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet"> 
     <!--Nos permite referenciar ciertos assets.  por medio de esta invocaremos nuestro archivo css.-->
   </head>
   <body>
@@ -22,16 +23,41 @@
                 <li>
                     <a href="">Imágenes</a>
                 </li>
-                <li>
-                    <a href="">Icon</a>
+                <li class="menu-icon">
+                  <a href="">
+                   <img src="./img/menu-de-puntos.png" alt="">
+                  </a>
                 </li>
                 <li>
-                    <a href="">Photo</a>
+                    <a href="">
+                      <img src="https://lh3.googleusercontent.com/ogw/ADea4I6zvHu8OwluSXs6RH9RqXjlFqIOV04NGCg0ZrolFO4=s32-c-mo" alt="">
+                    </a>
                 </li>
                 
 
             </ul>
         </nav>
       </header>
+      <main> <!--Delimitamos nuestro contenido principal-->
+        <section class="main-logo">
+          <img src="https://static.platzi.com/static/images/footer/logo.png" alt="">
+        </section>
+        <section class="main-input">
+          <div class="main-input-container"> <!--contenedor padre-->
+            <span class="search-icon"> <!--Sirve para colocar un icono-->
+              <img src="./img/search.png" alt="">
+           </span>
+           <input type="">
+           <a class="micro-icon" href="" >
+             <img src="./img/microphone.png" alt="">
+           </a> <!--Es un enlace. Se debe ligar a algo-->
+          </div>
+        </section>
+        <section class="main-buttons">
+          <div><button>Buscar en Platzi</button></div>
+          <div><button>Me siento con suerte</button></div>
+
+        </section>
+      </main>
   </body>
 </html>

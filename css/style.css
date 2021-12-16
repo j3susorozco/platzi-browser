@@ -4,7 +4,7 @@ body{
     padding: 0;
     font-size: 13px;
     font-family: 'Lato', sans-serif;
-    background-color: #273b47;
+    background-color: #12203d;
 }
 
 a{
@@ -87,7 +87,7 @@ main .main-input input{
     height: 40px;
     border: none;
     outline: none; /*Quita el borde generado cuando damos clic a un input*/
-    background-color: #273b47;
+    background-color: #12203d;
 }
 
 main .main-input-container:hover{
@@ -143,3 +143,34 @@ main .main-buttons button:hover{
     cursor: pointer;
 }
 
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute; /*El footer se queda siempre hasta abajo de la página*/
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Divide en dos fracciones el footer*/
+    align-items: center;
+    font-size: 13px;
+    background-color: #03091f;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex; /*Nos ayuda a posicionar el contenido de forma horizontal*/
+    padding-left: 0; /*reseteamos los padding left que tienen los ul por default*/
+}
+
+footer .footer-left{ 
+    justify-content: left; /*Justifica el contenido a la derecha*/
+}
+
+footer .footer-right{
+    justify-content: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #fff;
+}

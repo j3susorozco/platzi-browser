@@ -111,3 +111,35 @@ main .main-input .micro-icon img{
     height: 22px;
     cursor: pointer;
 }
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block; /*Por defecto el navegador a los div les coloca en bloques (display: block). Inline-block los coloca uno seguido de otro*/
+}
+
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #98ca3f;
+    border: 0;
+    font-size: 14px;
+    color: #121212;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    padding: 0 15px; /*Espacio interno de los elementos con su contendor padre */
+    margin-right: 15px;
+    border: 1px solid #98ca3f; /*Evita que no parezca que se mueve el botón al hacer hover*/
+    
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c1df8b;
+    box-shadow: 0 1px 1px #7ab70a; 
+    color: #000000;
+    cursor: pointer;
+}
+
